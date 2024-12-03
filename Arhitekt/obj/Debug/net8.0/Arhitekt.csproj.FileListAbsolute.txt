@@ -28,3 +28,4 @@
 /Users/evamuller/Desktop/arhitekt/Arhitekt/obj/Debug/net8.0/Arhitekt.pdb
 /Users/evamuller/Desktop/arhitekt/Arhitekt/obj/Debug/net8.0/Arhitekt.genruntimeconfig.cache
 /Users/evamuller/Desktop/arhitekt/Arhitekt/obj/Debug/net8.0/ref/Arhitekt.dll
+/Users/evamuller/Desktop/arhitekt/Arhitekt/obj/Debug/net8.0/Arhitekt.sourcelink.json

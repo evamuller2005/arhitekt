@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arhitekt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7486fdeb43f341994cf9aeb3cea3985593eacd39")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arhitekt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arhitekt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
