@@ -56,6 +56,7 @@ namespace Arhitekt.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DateCreated = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    images = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ArchitectID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

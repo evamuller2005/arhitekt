@@ -61,6 +61,10 @@ namespace Arhitekt.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("images")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ProjectID");
 
                     b.HasIndex("ArchitectID");

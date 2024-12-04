@@ -35,20 +35,20 @@ namespace Arhitekt.Data
         context.SaveChanges();
 
         var arhitekti = new Architect[]
-        {
-            new Architect{UserID=users.Single(u => u.Email == "alexander.carlson").UserID, Projects = new List<Project> { new Project { Name = "Project 1", Description = "Description 1", DateCreated = DateTime.Now } } },
-            new Architect{UserID=users.Single(u => u.Email == "arturo.anand@gmail.com").UserID, Projects = new List<Project> { new Project { Name = "Project 2", Description = "Description 2", DateCreated = DateTime.Now } } },
-            new Architect{UserID=users.Single(u => u.Email == "gytis.barzdukas@gmail.com").UserID},
-            new Architect{UserID=users.Single(u => u.Email == "yan.li@gmail.com").UserID, Projects = new List<Project> { new Project { Name = "Project 3", Description = "Description 3", DateCreated = DateTime.Now } } },
-            new Architect{UserID=users.Single(u => u.Email == "peggy.justice@gmail.com").UserID},
-            new Architect{UserID=users.Single(u => u.Email == "laurna.norman@gmail.com").UserID, Projects = new List<Project> { new Project { Name = "Project 4", Description = "Description 4", DateCreated = DateTime.Now } } }
-        };
+{
+    new Architect{UserID=users.Single(u => u.Email == "alexander.carlson").UserID, Projects = new List<Project> { new Project { Name = "Project 1", Description = "Description 1", DateCreated = DateTime.Now, images = new List<string> { "Arhitekt/images/101495134_preview-b192d3b7d4b04188a014754b9ffa6f79.jpg" } } } },
+    new Architect{UserID=users.Single(u => u.Email == "arturo.anand@gmail.com").UserID, Projects = new List<Project> { new Project { Name = "Project 2", Description = "Description 2", DateCreated = DateTime.Now, images = new List<string> { "Arhitekt/images/Alexandria-VA-2022-Scroggins-Rd.jpg" } } } },
+    new Architect{UserID=users.Single(u => u.Email == "gytis.barzdukas@gmail.com").UserID},
+    new Architect{UserID=users.Single(u => u.Email == "yan.li@gmail.com").UserID, Projects = new List<Project> { new Project { Name = "Project 3", Description = "Description 3", DateCreated = DateTime.Now, images = new List<string> { "Arhitekt/images/Stock-Gray-Ranch-Style-Home-AdobeStock_279953994-copy.jpeg", "Arhitekt/images/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg" } } } },
+    new Architect{UserID=users.Single(u => u.Email == "peggy.justice@gmail.com").UserID},
+    new Architect{UserID=users.Single(u => u.Email == "laurna.norman@gmail.com").UserID, Projects = new List<Project> { new Project { Name = "Project 4", Description = "Description 4", DateCreated = DateTime.Now, images = new List<string> { "Arhitekt/images/hq720.jpg" } } } }
+};
 
-        foreach (Architect c in arhitekti)
-        {
-            context.Architects.Add(c);
-        }
-        context.SaveChanges();
+foreach (Architect c in arhitekti)
+{
+    context.Architects.Add(c);
+}
+context.SaveChanges();
     }
 }
 }
