@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Arhitekt.Migrations
 {
     [DbContext(typeof(ArhitektContext))]
-    [Migration("20241204164940_Initial")]
+    [Migration("20241204174834_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -61,6 +61,10 @@ namespace Arhitekt.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("images")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

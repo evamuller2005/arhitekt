@@ -6,6 +6,28 @@
 
 <h1>Index</h1>
 
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="row">
+    @foreach (var project in Model)
+    {
+        <div class="col-md-4">
+            <h2>@project.Name</h2>
+            <p>@project.Description</p>
+            @if (project.images != null && project.images.Count > 0)
+            {
+                foreach (var image in project.images)
+                {
+                    <img src="@image" alt="@project.Name" class="img-fluid" />
+                }
+            }
+        </div>
+    }
+</div>
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
