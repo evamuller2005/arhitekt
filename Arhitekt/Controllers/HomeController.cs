@@ -1,17 +1,18 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Arhitekt.Models;
+using Arhitekt.Data;
+
 
 namespace Arhitekt.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+    private readonly ArhitektContext _context;
+    public HomeController(ArhitektContext context)
+        {
+            _context = context;
+        }
 
     public IActionResult Index()
     {

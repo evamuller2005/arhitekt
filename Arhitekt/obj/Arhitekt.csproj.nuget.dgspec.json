@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/evamuller/Desktop/arhitekt/Arhitekt/Arhitekt.csproj": {}
+    "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/Arhitekt.csproj": {}
   },
   "projects": {
-    "/Users/evamuller/Desktop/arhitekt/Arhitekt/Arhitekt.csproj": {
+    "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/Arhitekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/evamuller/Desktop/arhitekt/Arhitekt/Arhitekt.csproj",
+        "projectUniqueName": "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/Arhitekt.csproj",
         "projectName": "Arhitekt",
-        "projectPath": "/Users/evamuller/Desktop/arhitekt/Arhitekt/Arhitekt.csproj",
-        "packagesPath": "/Users/evamuller/.nuget/packages/",
-        "outputPath": "/Users/evamuller/Desktop/arhitekt/Arhitekt/obj/",
+        "projectPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/Arhitekt.csproj",
+        "packagesPath": "/Users/gregorvidrih/.nuget/packages/",
+        "outputPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/evamuller/.nuget/NuGet/NuGet.Config"
+          "/Users/gregorvidrih/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +42,28 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.*, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.*, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
