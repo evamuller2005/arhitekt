@@ -1,6 +1,109 @@
 ﻿@{
     ViewData["Title"] = "Messages";
 }
-<h1>@ViewData["Title"]</h1>
+<div class="container my-5">
+    <h1 class="text-center" style="color: #ECECEC;">@ViewData["Title"]</h1>
+</div>
 
-<p>Your Messages:</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="messages-sidebar">
+                <ul class="conversation-list">
+                    <li class="conversation-item">
+                        <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
+                        <span>Architect Name</span>
+                    </li>
+                    <li class="conversation-item">
+                        <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
+                        <span>Architect Name</span>
+                    </li>
+                    <li class="conversation-item">
+                        <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
+                        <span>Architect Name</span>
+                    </li>
+                    <li class="conversation-item">
+                        <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
+                        <span>Architect Name</span>
+                    </li>
+                    <li class="conversation-item">
+                        <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
+                        <span>Architect Name</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="chat-placeholder">
+                <p style="color: #B0B0B0;">Select a conversation to view messages.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #1C1C1C; 
+        color: #ECECEC; 
+    }
+
+    .messages-sidebar {
+        background-color: #2D2D2D;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        height: 100%;
+    }
+
+    .conversation-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .conversation-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        background-color: #3F3F3F;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+
+    .conversation-item:hover {
+        background-color: #4F4F4F;
+    }
+
+    .user-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #6A936C;
+        background-size: cover;
+        background-position: center;
+        margin-right: 15px;
+    }
+
+    .conversation-item span {
+        font-size: 1.2em;
+        color: #ECECEC;
+    }
+
+    .chat-placeholder {
+        background-color: #2D2D2D;
+        border-radius: 8px;
+        height: 300px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .chat-placeholder p {
+        font-size: 1.2em;
+        color: #B0B0B0;
+    }
+</style>
