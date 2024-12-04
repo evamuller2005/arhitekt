@@ -2,5 +2,61 @@
     ViewData["Title"] = "My Projects";
 }
 <h1>@ViewData["Title"]</h1>
+<div class="container my-5">
+    <h1 class="text-center" style="color: #ECECEC;">@ViewData["Title"]</h1>
+    <p class="text-center lead" style="color: #B0B0B0;">Manage and explore your personal projects</p>
+</div>
 
 <p>Tukaj so moji projekti.</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="/images/proj1.jpg" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Project Name 1</h5>
+                    <p class="card-text">A short description of the project.</p>
+                    <a href="/Projects/1" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="/images/proj2.jpg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Project Name 2</h5>
+                    <p class="card-text">A short description of the project.</p>
+                    <a href="/Projects/2" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #1C1C1C;
+        color: #ECECEC;
+    }
+    .card {
+        background-color: #2D2D2D;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .btn-outline-primary {
+        border-color: #6A936C;
+        color: #6A936C;
+    }
+    .btn-outline-primary:hover {
+        background-color: #6A936C;
+        color: #ECECEC;
+    }
+</style>
