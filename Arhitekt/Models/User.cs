@@ -1,7 +1,7 @@
 namespace Arhitekt.Models;
 using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 public class User
 {
     public int UserID { get; set; }

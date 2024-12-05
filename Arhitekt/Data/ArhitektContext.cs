@@ -1,9 +1,11 @@
-namespace Arhitekt.Data;
 using Arhitekt.Models;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-public class ArhitektContext : DbContext
+namespace Arhitekt.Data;
+
+
+public class ArhitektContext : IdentityDbContext<ApplicationUser>
 {
 
 public ArhitektContext(DbContextOptions<ArhitektContext> options) : base(options)
@@ -17,9 +19,10 @@ public DbSet<Project> Projects { get; set; }
 
 protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
-modelBuilder.Entity<User>().ToTable("User");
-modelBuilder.Entity<Architect>().ToTable("Architect");
-modelBuilder.Entity<Project>().ToTable("Project");
+            base.OnModelCreating(modelBuilder);
+    modelBuilder.Entity<User>().ToTable("User");
+    modelBuilder.Entity<Architect>().ToTable("Architect");
+    modelBuilder.Entity<Project>().ToTable("Project");
 }
 
 }

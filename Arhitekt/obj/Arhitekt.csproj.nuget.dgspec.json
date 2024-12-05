@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/Arhitekt.csproj": {}
+    "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj": {}
   },
   "projects": {
-    "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/Arhitekt.csproj": {
+    "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/Arhitekt.csproj",
+        "projectUniqueName": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj",
         "projectName": "Arhitekt",
-        "projectPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/Arhitekt.csproj",
+        "projectPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj",
         "packagesPath": "/Users/gregorvidrih/.nuget/packages/",
-        "outputPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt/Arhitekt/obj/",
+        "outputPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gregorvidrih/.nuget/NuGet/NuGet.Config"
@@ -43,6 +43,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.*, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.*, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.*, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
