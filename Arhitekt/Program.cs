@@ -1,13 +1,24 @@
 using Arhitekt.Data;
+using Arhitekt.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// nastavi spremenljivko connectionString za .useSqlServer(connectionString)
+var connectionString = builder.Configuration.GetConnectionString("ArhitektContext");
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ArhitektContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("ArhitektContext")));
 
+// nadomesti stari .AddDbContext
+builder.Services.AddDbContext<ArhitektContext>(options =>
+            options.UseSqlServer(connectionString));
+
+// prilagodi RequireConfirmedAccount = false in .AddRoles<IdentityRole>()
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ArhitektContext>();
 var app = builder.Build();
 
 // Seed database using DbInitializer 
@@ -30,7 +41,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.MapRazorPages();
 app.UseAuthorization();
+// dodaj app.MapRazorPages(); (npr. za app.useAuthentication())
+app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
