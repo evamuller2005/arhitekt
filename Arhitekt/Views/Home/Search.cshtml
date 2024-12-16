@@ -1,16 +1,13 @@
 @{
-    ViewData["Title"] = "Search Architects";
     ViewData["Title"] = "Browse Architects";
 }
-<h1>@ViewData["Title"]</h1>
 <div class="container my-5">
-    <h1 class="text-center" style="color: #ECECEC;">@ViewData["Title"]</h1>
+    <h1 class="text-center" style="color: #ECECEC; font-family: 'Playfair Display', serif;">@ViewData["Title"]</h1>
     <p class="text-center lead" style="color: #B0B0B0;">
         Find architects based on their work, style, or expertise.
     </p>
 </div>
 
-<p>Tukaj so Arhitekti.</p>
 <div class="container mb-5">
     <form class="form-inline d-flex justify-content-center" method="get" action="/Home/SearchResults">
         <input class="form-control w-50 mr-2" type="search" placeholder="Search architects" aria-label="Search" name="query">
@@ -19,8 +16,8 @@
 </div>
 
 <div class="container">
-    <h3 style="color: #ECECEC;">Popular</h3>
-    <div class="mb-4"></div>
+    <!-- Popular Architects Section -->
+    <h3 class="text-light mb-4">Popular</h3>
     <div class="row mb-5">
         <div class="col-md-4 mb-4">
             <div class="card">
@@ -32,7 +29,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-md-4 mb-4">
             <div class="card">
                 <img src="/images/proj2.jpg" class="card-img-top" alt="Popular Architect 2">
@@ -43,7 +39,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-md-4 mb-4">
             <div class="card">
                 <img src="/images/proj3.jpg" class="card-img-top" alt="Popular Architect 3">
@@ -56,8 +51,8 @@
         </div>
     </div>
 
-    <h3 style="color: #ECECEC;">All Architects</h3>
-        <div class="mb-4"></div>
+    <!-- All Architects Section -->
+    <h3 class="text-light mb-4">All Architects</h3>
     <ul class="user-list">
         <li class="user-item">
             <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
@@ -87,10 +82,22 @@
 </div>
 
 <style>
+    /* General Styling */
     body {
         background-color: #1C1C1C; 
         color: #ECECEC; 
+        font-family: 'Merriweather', serif;
     }
+
+    /* Page Title */
+    h1 {
+        font-family: 'Playfair Display', serif; 
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    /* Search Form Styling */
     .form-control {
         background-color: #2D2D2D;
         color: #ECECEC;
@@ -107,6 +114,25 @@
         background-color: #6A936C;
         color: #ECECEC;
     }
+
+    /* Popular Section Cards */
+    .card {
+        background-color: #2D2D2D;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .card-body {
+        color: #ECECEC;
+    }
+
+    /* All Architects List */
     .user-list {
         list-style-type: none;
         padding: 0;
@@ -124,28 +150,13 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: #6A936C; 
+        background-color: #6A936C;
         background-size: cover;
         background-position: center;
         margin-right: 15px;
     }
     .user-item span {
-        color: #ECECEC; 
-        font-size: 1.2em;
-    }
-    .card {
-        background-color: #2D2D2D;
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    }
-    .card-img-top {
-        height: 200px;
-        object-fit: cover;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    .card-body {
         color: #ECECEC;
+        font-size: 1.2em;
     }
 </style>

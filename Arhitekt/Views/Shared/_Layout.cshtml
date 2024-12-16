@@ -7,10 +7,64 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Arhitekt.styles.css" asp-append-version="true" />
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Merriweather', serif; /* Fancy serif font for body text */
+            color: #ECECEC;
+            background-color: #1C1C1C;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #1C1C1C !important; /* Dark background */
+            border-bottom: 2px solid #6A936C; /* Green border for elegance */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            font-family: 'Playfair Display', serif; /* Luxurious font for navbar links */
+            color: #ECECEC !important;
+            font-size: 1.2rem; /* Slightly larger text */
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .navbar-brand:hover {
+            color: #6A936C !important; /* Accent color on hover */
+        }
+
+        .navbar-toggler {
+            border-color: #6A936C;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ECECEC' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #1C1C1C;
+            color: #B0B0B0;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .footer a {
+            color: #6A936C;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ECECEC;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Arhitekt</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -20,16 +74,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item ms-auto">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Search">Search</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Search">Search</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Messages">Messages</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Messages">Messages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Projects">My Projects</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Projects">My Projects</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -37,13 +91,14 @@
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer border-top text-muted">
         <div class="container">
             &copy; 2024 - Arhitekt - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

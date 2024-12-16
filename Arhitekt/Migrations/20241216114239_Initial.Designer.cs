@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Arhitekt.Migrations
 {
     [DbContext(typeof(ArhitektContext))]
-    [Migration("20241205062309_Initial")]
+    [Migration("20241216114239_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

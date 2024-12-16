@@ -1,14 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Messages";
 }
-<h1>@ViewData["Title"]</h1>
 <div class="container my-5">
-    <h1 class="text-center" style="color: #ECECEC;">@ViewData["Title"]</h1>
+    <h1 class="text-center" style="color: #ECECEC; font-family: 'Playfair Display', serif;">@ViewData["Title"]</h1>
 </div>
 
-<p>Your Messages:</p>
 <div class="container">
     <div class="row">
+        <!-- Sidebar with Conversation List -->
         <div class="col-md-4">
             <div class="messages-sidebar">
                 <ul class="conversation-list">
@@ -36,19 +35,32 @@
             </div>
         </div>
 
+        <!-- Chat Placeholder -->
         <div class="col-md-8">
             <div class="chat-placeholder">
-                <p style="color: #B0B0B0;">Select a conversation to view messages.</p>
+                <p>Select a conversation to view messages.</p>
             </div>
         </div>
     </div>
 </div>
 
 <style>
+    /* General Styling */
     body {
         background-color: #1C1C1C; 
         color: #ECECEC; 
+        font-family: 'Merriweather', serif; /* Match the rest of the site */
     }
+
+    /* Page Title */
+    h1 {
+        font-family: 'Playfair Display', serif; /* Luxurious font for headers */
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    /* Sidebar Styling */
     .messages-sidebar {
         background-color: #2D2D2D;
         border-radius: 8px;
@@ -56,11 +68,13 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         height: 100%;
     }
+
     .conversation-list {
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
+
     .conversation-item {
         display: flex;
         align-items: center;
@@ -71,9 +85,11 @@
         transition: background-color 0.3s;
         cursor: pointer;
     }
+
     .conversation-item:hover {
         background-color: #4F4F4F;
     }
+
     .user-avatar {
         width: 50px;
         height: 50px;
@@ -83,10 +99,13 @@
         background-position: center;
         margin-right: 15px;
     }
+
     .conversation-item span {
         font-size: 1.2em;
         color: #ECECEC;
     }
+
+    /* Chat Placeholder Styling */
     .chat-placeholder {
         background-color: #2D2D2D;
         border-radius: 8px;
@@ -96,8 +115,10 @@
         align-items: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
+
     .chat-placeholder p {
         font-size: 1.2em;
+        font-family: 'Merriweather', serif;
         color: #B0B0B0;
     }
 </style>
