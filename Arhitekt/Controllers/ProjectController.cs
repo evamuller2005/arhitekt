@@ -57,7 +57,7 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,ArchitectID")] Project project)
+        public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,images,ArchitectID")] Project project)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProjectID,Name,Description,DateCreated,ArchitectID")] Project project)
+        public async Task<IActionResult> Edit(int id, [Bind("ProjectID,Name,Description,DateCreated,images,ArchitectID")] Project project)
         {
             if (id != project.ProjectID)
             {

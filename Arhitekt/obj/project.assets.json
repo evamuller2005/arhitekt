@@ -8048,11 +8048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj",
+      "projectUniqueName": "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/Arhitekt.csproj",
       "projectName": "Arhitekt",
-      "projectPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj",
+      "projectPath": "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/Arhitekt.csproj",
       "packagesPath": "/Users/gregorvidrih/.nuget/packages/",
-      "outputPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/obj/",
+      "outputPath": "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/gregorvidrih/.nuget/NuGet/NuGet.Config"

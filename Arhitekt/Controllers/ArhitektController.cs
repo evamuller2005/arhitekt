@@ -10,23 +10,22 @@ using Arhitekt.Models;
 
 namespace Arhitekt.Controllers
 {
-    public class ArchitectController : Controller
+    public class ArhitektController : Controller
     {
         private readonly ArhitektContext _context;
 
-        public ArchitectController(ArhitektContext context)
+        public ArhitektController(ArhitektContext context)
         {
             _context = context;
         }
 
-        // GET: Architect
+        // GET: Arhitekt
         public async Task<IActionResult> Index()
         {
-            var arhitektContext = _context.Architects.Include(a => a.User);
-            return View(await arhitektContext.ToListAsync());
+            return View(await _context.Architects.ToListAsync());
         }
 
-        // GET: Architect/Details/5
+        // GET: Arhitekt/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -35,7 +34,6 @@ namespace Arhitekt.Controllers
             }
 
             var architect = await _context.Architects
-                .Include(a => a.User)
                 .FirstOrDefaultAsync(m => m.ArchitectID == id);
             if (architect == null)
             {
@@ -45,19 +43,18 @@ namespace Arhitekt.Controllers
             return View(architect);
         }
 
-        // GET: Architect/Create
+        // GET: Arhitekt/Create
         public IActionResult Create()
         {
-            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID");
             return View();
         }
 
-        // POST: Architect/Create
+        // POST: Arhitekt/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ArchitectID,UserID")] Architect architect)
+        public async Task<IActionResult> Create([Bind("ArchitectID,UserintID")] Architect architect)
         {
             if (ModelState.IsValid)
             {
@@ -65,11 +62,10 @@ namespace Arhitekt.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", architect.UserID);
             return View(architect);
         }
 
-        // GET: Architect/Edit/5
+        // GET: Arhitekt/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -82,16 +78,15 @@ namespace Arhitekt.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", architect.UserID);
             return View(architect);
         }
 
-        // POST: Architect/Edit/5
+        // POST: Arhitekt/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ArchitectID,UserID")] Architect architect)
+        public async Task<IActionResult> Edit(int id, [Bind("ArchitectID,UserintID")] Architect architect)
         {
             if (id != architect.ArchitectID)
             {
@@ -118,11 +113,10 @@ namespace Arhitekt.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", architect.UserID);
             return View(architect);
         }
 
-        // GET: Architect/Delete/5
+        // GET: Arhitekt/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -131,7 +125,6 @@ namespace Arhitekt.Controllers
             }
 
             var architect = await _context.Architects
-                .Include(a => a.User)
                 .FirstOrDefaultAsync(m => m.ArchitectID == id);
             if (architect == null)
             {
@@ -141,7 +134,7 @@ namespace Arhitekt.Controllers
             return View(architect);
         }
 
-        // POST: Architect/Delete/5
+        // POST: Arhitekt/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

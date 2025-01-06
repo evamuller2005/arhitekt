@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TKYE5S5Vzhs=",
+  "dgSpecHash": "qr9EdVPQLiU=",
   "success": true,
-  "projectFilePath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj",
+  "projectFilePath": "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/Arhitekt.csproj",
   "expectedPackageFiles": [
     "/Users/gregorvidrih/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/gregorvidrih/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

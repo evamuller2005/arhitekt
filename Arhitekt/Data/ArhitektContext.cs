@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Arhitekt.Data;
 
 
-public class ArhitektContext : IdentityDbContext<ApplicationUser>
+public class ArhitektContext : IdentityDbContext<User>
 {
 
 public ArhitektContext(DbContextOptions<ArhitektContext> options) : base(options)
