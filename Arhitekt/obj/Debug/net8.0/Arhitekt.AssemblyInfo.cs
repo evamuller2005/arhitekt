@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arhitekt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d76164abf27ec77d541ef07a65055578ed4dc36b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79887678fccb5f6c1ca4f39e0ccdd31e7c61ab6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arhitekt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arhitekt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

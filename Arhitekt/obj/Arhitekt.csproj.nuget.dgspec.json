@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/Arhitekt.csproj": {}
+    "/Users/gregorvidrih/Documents/Arhitekt 8jan/arhitekt/Arhitekt/Arhitekt.csproj": {}
   },
   "projects": {
-    "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/Arhitekt.csproj": {
+    "/Users/gregorvidrih/Documents/Arhitekt 8jan/arhitekt/Arhitekt/Arhitekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/Arhitekt.csproj",
+        "projectUniqueName": "/Users/gregorvidrih/Documents/Arhitekt 8jan/arhitekt/Arhitekt/Arhitekt.csproj",
         "projectName": "Arhitekt",
-        "projectPath": "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/Arhitekt.csproj",
+        "projectPath": "/Users/gregorvidrih/Documents/Arhitekt 8jan/arhitekt/Arhitekt/Arhitekt.csproj",
         "packagesPath": "/Users/gregorvidrih/.nuget/packages/",
-        "outputPath": "/Users/gregorvidrih/Downloads/arhitekt/Arhitekt/obj/",
+        "outputPath": "/Users/gregorvidrih/Documents/Arhitekt 8jan/arhitekt/Arhitekt/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gregorvidrih/.nuget/NuGet/NuGet.Config"
@@ -74,6 +74,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.*, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )"
             }
           },
           "imports": [
