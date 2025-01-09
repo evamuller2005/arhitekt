@@ -1,19 +1,44 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var projects = ViewData["Projects"] as List<Arhitekt.Models.Project>;
 }
 
 <div class="hero bg-dark text-center py-5">
     <h1 style="color: #ECECEC; font-size: 3em; font-family: 'Cursive';">Welcome to Architect</h1>
-    <p class="lead" style="color: #B0B0B0;">Discover the finest architects and their most iconic projects.</p>
+    <p class="lead" style="color: #B0B0B0;">Find inspiration and connect with exceptional architects.</p>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        @if (projects != null && projects.Any())
+        {
+            foreach (var project in projects)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="@project.Image" class="card-img-top" alt="@project.Name" />
+                        <div class="card-body">
+                            <h5 class="card-title">@project.Name</h5>
+                            <p class="card-text">@project.Description</p>
+                            <a href="/Project/Details/@project.ProjectID" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-center" style="color: #ECECEC;">No projects available at the moment.</p>
+        }
+    </div>
 </div>
 
 <style>
     body {
-        background-color: #1C1C1C; /* tmno ozadje */
-        color: #ECECEC; /* barva teksta */
+        background-color: #1C1C1C; /* Dark background */
+        color: #ECECEC; /* Text color */
     }
 
-    /* za kartice */
     .card {
         background-color: #2D2D2D; 
         border: none;
@@ -21,7 +46,6 @@
         border-radius: 8px;
     }
 
-    /* za slikce */
     .card-img-top {
         height: 200px;
         object-fit: cover; 
@@ -29,7 +53,6 @@
         border-top-right-radius: 8px;
     }
 
-    /* gumb  */
     .btn-outline-primary {
         border-color: #6A936C; 
         color: #6A936C;
@@ -39,137 +62,4 @@
         background-color: #6A936C;
         color: #ECECEC;
     }
-}
 </style>
-
-<br />
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/911.jpg" class="card-img-top" alt="Project 1">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 1</h5>
-                    <p class="card-text">Specializes in modern architecture and urban designs.</p>
-                    <a href="/Architect/1" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj2.jpg" class="card-img-top" alt="Project 2">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 2</h5>
-                    <p class="card-text">Known for sustainable and eco-friendly designs.</p>
-                    <a href="/Architect/2" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj3.jpg" class="card-img-top" alt="Project 3">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 3</h5>
-                    <p class="card-text">Award-winning architect focusing on commercial spaces.</p>
-                    <a href="/Architect/3" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj4.jpg" class="card-img-top" alt="project 1">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 1</h5>
-                    <p class="card-text">Specializes in modern architecture and urban designs.</p>
-                    <a href="/Architect/1" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj5.jpg" class="card-img-top" alt="project 2">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 2</h5>
-                    <p class="card-text">Known for sustainable and eco-friendly designs.</p>
-                    <a href="/Architect/2" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj6.jpg" class="card-img-top" alt="project 3">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 3</h5>
-                    <p class="card-text">Award-winning architect focusing on commercial spaces.</p>
-                    <a href="/Architect/3" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj7.jpg" class="card-img-top" alt="project 4">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 4</h5>   
-                    <p class="card-text">Specializes in modern architecture and urban designs.</p>
-                    <a href="/Architect/4" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>  
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj8.jpg" class="card-img-top" alt="project 4">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 4</h5>   
-                    <p class="card-text">Specializes in modern architecture and urban designs.</p>
-                    <a href="/Architect/4" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>  
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj9.jpg" class="card-img-top" alt="project 4">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 4</h5>   
-                    <p class="card-text">Specializes in modern architecture and urban designs.</p>
-                    <a href="/Architect/4" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>  
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj10.jpg" class="card-img-top" alt="project 4">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 4</h5>   
-                    <p class="card-text">Specializes in modern architecture and urban designs.</p>
-                    <a href="/Architect/4" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>  
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="~/images/proj11.jpg" class="card-img-top" alt="project 4">
-                <div class="card-body">
-                    <h5 class="card-title">Architect Name 4</h5>   
-                    <p class="card-text">Specializes in modern architecture and urban designs.</p>
-                    <a href="/Architect/4" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>   
-
-
-
-    </div>
-</div>

@@ -1,89 +1,19 @@
 @{
     ViewData["Title"] = "Search Architects";
-    ViewData["Title"] = "Browse Architects";
 }
-<h1>@ViewData["Title"]</h1>
+
 <div class="container my-5">
     <h1 class="text-center" style="color: #ECECEC;">@ViewData["Title"]</h1>
     <p class="text-center lead" style="color: #B0B0B0;">
-        Find architects based on their work, style, or expertise.
+        Find inspiration and connect with exceptional architects.
     </p>
 </div>
 
-<p>Tukaj so Arhitekti.</p>
 <div class="container mb-5">
     <form class="form-inline d-flex justify-content-center" method="get" action="/Home/SearchResults">
         <input class="form-control w-50 mr-2" type="search" placeholder="Search architects" aria-label="Search" name="query">
         <button class="btn btn-outline-primary" type="submit">Search</button>
     </form>
-</div>
-
-<div class="container">
-    <h3 style="color: #ECECEC;">Popular</h3>
-    <div class="mb-4"></div>
-    <div class="row mb-5">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="/images/proj1.jpg" class="card-img-top" alt="Popular Architect 1">
-                <div class="card-body">
-                    <h5 class="card-title">Popular Architect 1</h5>
-                    <p class="card-text">A visionary architect known for groundbreaking designs.</p>
-                    <a href="/Architect/1" class="btn btn-outline-primary">View More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="/images/proj2.jpg" class="card-img-top" alt="Popular Architect 2">
-                <div class="card-body">
-                    <h5 class="card-title">Popular Architect 2</h5>
-                    <p class="card-text">Famous for sustainable architecture and eco-friendly designs.</p>
-                    <a href="/Architect/2" class="btn btn-outline-primary">View More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="/images/proj3.jpg" class="card-img-top" alt="Popular Architect 3">
-                <div class="card-body">
-                    <h5 class="card-title">Popular Architect 3</h5>
-                    <p class="card-text">Award-winning projects blending art and function.</p>
-                    <a href="/Architect/3" class="btn btn-outline-primary">View More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h3 style="color: #ECECEC;">All Architects</h3>
-        <div class="mb-4"></div>
-    <ul class="user-list">
-        <li class="user-item">
-            <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
-            <span>Architect Name 1</span>
-        </li>
-        <li class="user-item">
-            <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
-            <span>Architect Name 2</span>
-        </li>
-        <li class="user-item">
-            <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
-            <span>Architect Name 3</span>
-        </li>
-        <li class="user-item">
-            <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
-            <span>Architect Name 4</span>
-        </li>
-        <li class="user-item">
-            <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
-            <span>Architect Name 5</span>
-        </li>
-        <li class="user-item">
-            <div class="user-avatar" style="background-image: url('/images/arh1.jpeg');"></div>
-            <span>Architect Name 6</span>
-        </li>
-    </ul>
 </div>
 
 <style>
@@ -101,51 +31,4 @@
     }
     .btn-outline-primary {
         border-color: #6A936C;
-        color: #6A936C;
-    }
-    .btn-outline-primary:hover {
-        background-color: #6A936C;
-        color: #ECECEC;
-    }
-    .user-list {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    .user-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-        background-color: #2D2D2D;
-        padding: 10px 15px;
-        border-radius: 8px;
-    }
-    .user-avatar {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #6A936C; 
-        background-size: cover;
-        background-position: center;
-        margin-right: 15px;
-    }
-    .user-item span {
-        color: #ECECEC; 
-        font-size: 1.2em;
-    }
-    .card {
-        background-color: #2D2D2D;
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    }
-    .card-img-top {
-        height: 200px;
-        object-fit: cover;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    .card-body {
-        color: #ECECEC;
-    }
-</style>
+        color: #6A936

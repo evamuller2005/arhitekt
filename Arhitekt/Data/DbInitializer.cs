@@ -36,12 +36,14 @@ namespace Arhitekt.Data
 
         var arhitekti = new Architect[]
 {
-    new Architect{UserintID=users.Single(u => u.Email == "alexander.carlson").UserintID, Projects = new List<Project> { new Project { Name = "Project 1", Description = "Description 1", DateCreated = DateTime.Now, images = new List<string> { "Arhitekt/wwwroot/images/napoli.jpg" } } } },
-    new Architect{UserintID=users.Single(u => u.Email == "arturo.anand@gmail.com").UserintID, Projects = new List<Project> { new Project { Name = "Project 2", Description = "Description 2", DateCreated = DateTime.Now, images = new List<string> { "Arhitekt/wwwroot/images/four.jpg" } } } },
+    new Architect{UserintID=users.Single(u => u.Email == "alexander.carlson").UserintID, Projects = new List<Project> { new Project { Name = "Chau", Description = "The House in Chau Doc by Alexander Carlson is a terraced, open-air residence in Vietnam that seamlessly integrates greenery and natural ventilation.", DateCreated = DateTime.Now, Image = "images/chau.jpg" } } },
+    new Architect{UserintID=users.Single(u => u.Email == "arturo.anand@gmail.com").UserintID, Projects = new List<Project> { new Project { Name = "Meztitla", Description = "Casa Meztitla by Arturo Anand is a rustic retreat in Mexico that harmonizes with its natural surroundings through raw materials and open, minimalist design.", DateCreated = DateTime.Now, Image = "images/meztitla.jpg" } } },
     new Architect{UserintID=users.Single(u => u.Email == "gytis.barzdukas@gmail.com").UserintID},
-    new Architect{UserintID=users.Single(u => u.Email == "yan.li@gmail.com").UserintID, Projects = new List<Project> { new Project { Name = "Project 3", Description = "Description 3", DateCreated = DateTime.Now, images = new List<string> { "Arhitekt/wwwroot/images/antwerp.jpg", "Arhitekt/wwwroot/images/back.jpg" } } } },
+    new Architect{UserintID=users.Single(u => u.Email == "yan.li@gmail.com").UserintID, Projects = new List<Project> { new Project { Name = "Rural", Description = "The Rural House by Yan Li is a secluded residence in Spain that blends seamlessly into its natural landscape with a minimalist and earthy design.", DateCreated = DateTime.Now, Image = "images/rural.jpg" } } },
     new Architect{UserintID=users.Single(u => u.Email == "peggy.justice@gmail.com").UserintID},
-    new Architect{UserintID=users.Single(u => u.Email == "laurna.norman@gmail.com").UserintID, Projects = new List<Project> { new Project { Name = "Project 4", Description = "Description 4", DateCreated = DateTime.Now, images = new List<string> { "Arhitekt/wwwroot/images/west.jpg" } } } }
+    new Architect{UserintID=users.Single(u => u.Email == "laurna.norman@gmail.com").UserintID, Projects = new List<Project> { new Project { Name = "West", Description = "Description 4", DateCreated = DateTime.Now, Image = "images/west.jpg" } } },
+    
+
 };
 
 foreach (Architect c in arhitekti)
