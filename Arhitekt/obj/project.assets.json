@@ -8466,19 +8466,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/gregorvidrih/.nuget/packages/": {}
+    "/Users/evamuller/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gregorvidrih/Documents/Arhitekt 8jan/arhitekt/Arhitekt/Arhitekt.csproj",
+      "projectUniqueName": "/Users/evamuller/Desktop/a/arhitekt/Arhitekt/Arhitekt.csproj",
       "projectName": "Arhitekt",
-      "projectPath": "/Users/gregorvidrih/Documents/Arhitekt 8jan/arhitekt/Arhitekt/Arhitekt.csproj",
-      "packagesPath": "/Users/gregorvidrih/.nuget/packages/",
-      "outputPath": "/Users/gregorvidrih/Documents/Arhitekt 8jan/arhitekt/Arhitekt/obj/",
+      "projectPath": "/Users/evamuller/Desktop/a/arhitekt/Arhitekt/Arhitekt.csproj",
+      "packagesPath": "/Users/evamuller/.nuget/packages/",
+      "outputPath": "/Users/evamuller/Desktop/a/arhitekt/Arhitekt/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/gregorvidrih/.nuget/NuGet/NuGet.Config"
+        "/Users/evamuller/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
