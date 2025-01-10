@@ -41,6 +41,16 @@ namespace Arhitekt.Controllers
             return View();
         }
 
+        public IActionResult Discover()
+        {
+            // Fetch all users with the Architect role
+            var architects = _context.Users
+                .Where(u => u.Role == UserRole.Architect)
+                .ToList();
+
+            return View(architects);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

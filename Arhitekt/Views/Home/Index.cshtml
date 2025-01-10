@@ -3,12 +3,16 @@
     var projects = ViewData["Projects"] as List<Arhitekt.Models.Project>;
 }
 
-<div class="hero bg-dark text-center py-5">
-    <h1 style="color: #ECECEC; font-size: 3em; font-family: 'Cursive';">Welcome to Architect</h1>
-    <p class="lead" style="color: #B0B0B0;">Find inspiration and connect with exceptional architects.</p>
+<div class="hero">
+    <div class="hero-content">
+        <h1 style="color: #ECECEC; font-size: 3em; font-family: 'Cursive';">Welcome to Architect</h1>
+        <p class="lead" style="color: #B0B0B0;">Find inspiration and connect with exceptional architects.</p>
+    </div>
 </div>
 
-<div class="container mt-5">
+
+
+<div class="container mt-4">
     <div class="row">
         @if (projects != null && projects.Any())
         {
@@ -41,25 +45,59 @@
 
     .card {
         background-color: #2D2D2D; 
-        border: none;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
+        border: black;
+        box-shadow: 0 6px 6px black;
+        border-radius: 10px;
     }
 
     .card-img-top {
         height: 200px;
         object-fit: cover; 
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border-radius: 10px;
     }
 
     .btn-outline-primary {
-        border-color: #6A936C; 
-        color: #6A936C;
+        border-color: #49674a; 
+        color: #49674a;
     }
 
-    .btn-outline-primary:hover {
-        background-color: #6A936C;
+    .btn-outline-primary:hover, .btn-outline-primary:focus {
+        outline: none; 
+        background-color: #49674a;
         color: #ECECEC;
+        border-color: #49674a; 
+        box-shadow: 0 0 10px rgba(106, 147, 108, 0.5); 
     }
+    
+    .hero {
+        min-height: 230px;
+        height: 20vh;
+        align-items: center;
+        justify-content: center; /* Poravnava na sredino */
+        text-align: center; /* Poravnava na sredino */
+        display: flex;
+        padding: 50px; /* Dodaten razmik zgoraj in spodaj */
+        background-color: #2D2D2D; /* Temno siva ozadje */
+        color: #ECECEC; /* Svetla barva besedila */
+        padding: 20px; /* Dodaten razmik zgoraj in spodaj */
+        font-family: 'Cursive', sans-serif; /* Pisava za glavni naslov */
+        border-radius: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 3em; /* Velikost glavnega naslova */
+        font-family: 'Cursive', sans-serif;;
+        color: #ECECEC; /* Barva naslova */
+        text-align: center; /* Poravnava na sredino */
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.25em; /* Velikost podnaslova */
+        font-family: 'Cursive', sans-serif;;
+        text-align: center; /* Poravnava na sredino */
+        color: #B0B0B0; /* Svetlo siva barva */
+        margin-top: 10px; /* Dodaten razmik med naslovom in podnaslovom */
+    }
+
 </style>

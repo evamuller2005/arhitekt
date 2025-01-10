@@ -1,0 +1,47 @@
+@model IEnumerable<Arhitekt.Models.User>
+
+@{
+    ViewData["Title"] = "Discover Architects";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Discover Architects</h1>
+
+    <div class="row">
+        @foreach (var architect in Model)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@architect.FirstName @architect.LastName</h5>
+                        <p class="card-text">Email: @architect.Email</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #1C1C1C;
+        color: #ECECEC;
+    }
+
+    .card {
+        background-color: #2D2D2D;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-outline-primary {
+        border-color: #6A936C;
+        color: #6A936C;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #6A936C;
+        color: #ECECEC;
+    }
+</style>
