@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/evamuller/Desktop/a/arhitekt/Arhitekt/Arhitekt.csproj": {}
+    "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj": {}
   },
   "projects": {
-    "/Users/evamuller/Desktop/a/arhitekt/Arhitekt/Arhitekt.csproj": {
+    "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/evamuller/Desktop/a/arhitekt/Arhitekt/Arhitekt.csproj",
+        "projectUniqueName": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj",
         "projectName": "Arhitekt",
-        "projectPath": "/Users/evamuller/Desktop/a/arhitekt/Arhitekt/Arhitekt.csproj",
-        "packagesPath": "/Users/evamuller/.nuget/packages/",
-        "outputPath": "/Users/evamuller/Desktop/a/arhitekt/Arhitekt/obj/",
+        "projectPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Arhitekt.csproj",
+        "packagesPath": "/Users/gregorvidrih/.nuget/packages/",
+        "outputPath": "/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/evamuller/.nuget/NuGet/NuGet.Config"
+          "/Users/gregorvidrih/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
