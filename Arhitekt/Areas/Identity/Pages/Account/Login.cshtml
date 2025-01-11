@@ -81,3 +81,68 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<style>
+    /* Dark Background for the Page */
+    body {
+        background-color: #1C1C1C; /* Matches other pages */
+        color: #FFFFFF; /* White text for visibility */
+    }
+
+    /* Form Styling */
+    form {
+        background-color: #2D2D2D; /* Dark form background */
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Input Fields */
+    .form-control {
+        background-color: #3A3A3A; /* Dark input background */
+        color: #FFFFFF; /* White text */
+        border: 1px solid #6A936C; /* Green border */
+    }
+
+    .form-control::placeholder {
+        color: #B0B0B0; /* Light placeholder text */
+    }
+
+    /* Labels */
+    .form-label {
+        color: #FFFFFF; /* White labels */
+    }
+
+    /* Validation Messages */
+    .text-danger {
+        color: #FF6B6B !important; /* Red for errors */
+    }
+
+    /* Buttons */
+    .btn-success {
+        background-color: #6A936C; /* Green button background */
+        border-color: #6A936C; /* Green button border */
+        color: #FFFFFF; /* White button text */
+    }
+
+    .btn-success:hover {
+        background-color: #5A8C5F; /* Darker green on hover */
+        border-color: #4F7551;
+        color: #FFFFFF; /* Ensure text remains white on hover */
+    }
+
+    /* Links */
+    a.text-white {
+        color: #FFFFFF !important; /* White link text */
+    }
+
+    a.text-white:hover {
+        color: #6A936C !important; /* Green accent on hover */
+        text-decoration: underline;
+    }
+
+    /* Checkbox Label */
+    .form-check-label.text-white {
+        color: #FFFFFF !important; /* White checkbox label */
+    }
+</style>

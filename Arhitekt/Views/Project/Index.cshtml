@@ -6,9 +6,11 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="container">
+    <h1 class="text-center text-light mb-4">Projects</h1>
+    <p>
+        <a asp-action="Create" class="btn btn-success">Create New</a>
+    </p>
 <table class="table">
     <thead>
         <tr>
@@ -57,3 +59,47 @@
 }
     </tbody>
 </table>
+
+   <style>
+            body {
+                background-color: #94e0a2; /* Dark background to match other pages */
+                color: #FFFFFF; /* White text for better visibility */
+            }
+            .table-dark {
+                background-color: #94e0a2; /* Dark table background */
+                color: #FFFFFF !important; /* White text in table */
+            }
+            .table-dark th {
+                color: #FFFFFF !important; /* White text in table headers */
+            }
+            .table-dark td {
+                color: #FFFFFF !important; /* White text in table data */
+            }
+            .table-dark a {
+                color: #FFFFFF !important; /* White link text within table */
+            }
+            .table-dark a:hover {
+                color: #6A936C !important; /* Green accent on link hover */
+                text-decoration: underline;
+            }
+            .btn-success {
+                background-color: #6A936C; /* Green button background */
+                border-color: #6A936C; /* Green button border */
+                color: #FFFFFF; /* White text on buttons */
+            }
+            .btn-success:hover {
+                background-color: #5A8C5F; /* Darker green on hover */
+                border-color: #4F7551;
+                color: #FFFFFF; /* Ensure text remains white on hover */
+            }
+            /* Optional: Style the "Create New" button */
+            .btn-success-outline {
+                background-color: transparent;
+                border-color: #6A936C;
+                color: #6A936C;
+            }
+            .btn-success-outline:hover {
+                background-color: #6A936C;
+                color: #FFFFFF;
+            }
+        </style>

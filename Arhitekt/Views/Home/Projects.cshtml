@@ -5,7 +5,7 @@
         <div class="col-12">
             <h1 class="text-center">Projects</h1>
             <p>
-                <a asp-action="Create">Create New</a>
+                <a href="@Url.Action("Create", "Project")" class="btn btn-secondary">Create New</a>
             </p>
         </div>
         @if (Model.Any())

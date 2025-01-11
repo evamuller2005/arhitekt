@@ -4,34 +4,75 @@
     ViewData["Title"] = "Search Results";
 }
 
-<h1>Search Results</h1>
+<div class="container my-5">
+    <h1 class="text-center">Search Results</h1>
 
-<h2>Users</h2>
-@if (Model.Users != null && Model.Users.Any())
-{
-    <ul>
-        @foreach (var user in Model.Users)
-        {
-            <li>@user.FirstName @user.LastName (@user.Email)</li>
-        }
-    </ul>
-}
-else
-{
-    <p>No users found.</p>
-}
+    <h2 class="mt-4">Users</h2>
+    @if (Model.Users != null && Model.Users.Any())
+    {
+        <div class="row">
+            @foreach (var user in Model.Users)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">@user.FirstName @user.LastName</h5>
+                            <p class="card-text">@user.Email</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No users found.</p>
+    }
 
-<h2>Projects</h2>
-@if (Model.Projects != null && Model.Projects.Any())
-{
-    <ul>
-        @foreach (var project in Model.Projects)
-        {
-            <li>@project.Name - @project.Description</li>
-        }
-    </ul>
-}
-else
-{
-    <p>No projects found.</p>
-}
+    <h2 class="mt-5">Projects</h2>
+    @if (Model.Projects != null && Model.Projects.Any())
+    {
+        <div class="row">
+            @foreach (var project in Model.Projects)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="@project.Image" class="card-img-top" alt="@project.Name">
+                        <div class="card-body">
+                            <h5 class="card-title">@project.Name</h5>
+                            <p class="card-text">@project.Description</p>
+                            <a href="@Url.Action("Details", "Project", new { id = project.ProjectID })" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No projects found.</p>
+    }
+</div>
+
+<style>
+    body {
+        background-color: #1C1C1C; 
+        color: #ECECEC; 
+    }
+    .card {
+        background-color: #2D2D2D;
+        color: #ECECEC;
+        border: 1px solid #6A936C;
+    }
+    .card-title {
+        color: #6A936C;
+    }
+    .btn-outline-primary {
+        border-color: #6A936C;
+        color: #6A936C;
+    }
+    .btn-outline-primary:hover {
+        background-color: #6A936C;
+        color: #ECECEC;
+    }
+</style>

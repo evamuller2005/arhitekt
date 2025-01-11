@@ -6,10 +6,10 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+    <p>
+        <a asp-action="Create" class="btn btn-success">Create New</a>
+    </p>
+    <table class="table table-striped table-dark">
     <thead>
         <tr>
             <th>
@@ -135,3 +135,22 @@
 }
     </tbody>
 </table>
+
+<style>
+        body {
+            background-color: #1C1C1C; /* Match other pages' background */
+            color: #ECECEC;
+        }
+        .table-dark {
+            background-color: #2D2D2D;
+            color: #ECECEC;
+        }
+        .btn-success {
+            background-color: #6A936C;
+            border-color: #6A936C;
+        }
+        .btn-success:hover {
+            background-color: #5a8c5f;
+            border-color: #4F7551;
+        }
+    </style>

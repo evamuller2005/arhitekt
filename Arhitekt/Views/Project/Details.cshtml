@@ -4,46 +4,73 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="container mt-4">
+    <h1 class="text-center text-light">Project Details</h1>
+    <div class="card bg-dark text-light">
+        <div class="card-header bg-success">
+            <h4>@ViewData["Title"]</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.DateCreated)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.DateCreated)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Image)
+                </dt>
+                <dd class="col-sm-10">
+                    <img src="@Url.Content(Model.Image)" alt="Project Image" class="img-fluid rounded" />
+                </dd>
+            </dl>
+            <a asp-action="Edit" class="btn btn-success">Edit</a>
+            <a asp-action="Index" class="btn btn-success">Back to List</a>
+        </div>
+    </div>
+</div>
 
-<div>
-    <h4>Project</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateCreated)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateCreated)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Image)
-            <img src="@Url.Content(Model.Image)" alt="Image" />
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserintID)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserintID)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.ProjectID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<style>
+    body {
+        background-color: #1C1C1C; /* Dark background to match other pages */
+        color: #ECECEC; /* Light text for contrast */
+    }
+    .card {
+        background-color: #2D2D2D; /* Dark card background */
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .card-header {
+        background-color: #6A936C; /* Green accent consistent with other pages */
+        color: #FFFFFF; /* White text for readability */
+    }
+    .btn-success {
+        background-color: #6A936C; /* Green buttons to match the theme */
+        border-color: #6A936C;
+    }
+    .btn-success:hover {
+        background-color: #5A7E56; /* Darker green on hover */
+        border-color: #4F7551;
+    }
+    .text-light {
+        color: #ECECEC !important; /* Ensure all text with this class is light */
+    }
+    .img-fluid {
+        max-height: 300px; /* Optional: Adjust image size as needed */
+        object-fit: cover;
+    }
+</style>

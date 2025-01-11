@@ -6,6 +6,12 @@
     <h1 class="text-center" style="color: #ECECEC;">@ViewData["Title"]</h1>
 </div>
 
+<div class="overlay">
+    <div class="overlay-message">
+        <p>The function is not yet available.</p>
+    </div>
+</div>
+
 <p>Your Messages:</p>
 <div class="container">
     <div class="row">
@@ -99,5 +105,28 @@
     .chat-placeholder p {
         font-size: 1.2em;
         color: #B0B0B0;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 60px; /* Adjust this value to match your navbar's height */
+        left: 0;
+        width: 100%;
+        height: calc(100% - 60px); /* Subtract the navbar's height */
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999; /* Ensure this is below the navbar's z-index */
+    }
+
+    .overlay-message {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px 50px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 1.5em;
+        color: #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 </style>

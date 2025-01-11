@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Arhitekt.Data;
 using Arhitekt.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Arhitekt.Controllers
 {
@@ -20,12 +21,14 @@ namespace Arhitekt.Controllers
         }
 
         // GET: User
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Users.ToListAsync());
         }
 
         // GET: User/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -44,6 +47,7 @@ namespace Arhitekt.Controllers
         }
 
         // GET: User/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -54,6 +58,7 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("UserintID,FirstName,LastName,Email,Password,Id,UserName,NormalizedUserName,NormalizedEmail,EmailConfirmed,PasswordHash,SecurityStamp,ConcurrencyStamp,PhoneNumber,PhoneNumberConfirmed,TwoFactorEnabled,LockoutEnd,LockoutEnabled,AccessFailedCount")] User user)
         {
             if (ModelState.IsValid)
@@ -66,6 +71,7 @@ namespace Arhitekt.Controllers
         }
 
         // GET: User/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -86,6 +92,7 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(string id, [Bind("UserintID,FirstName,LastName,Email,Password,Id,UserName,NormalizedUserName,NormalizedEmail,EmailConfirmed,PasswordHash,SecurityStamp,ConcurrencyStamp,PhoneNumber,PhoneNumberConfirmed,TwoFactorEnabled,LockoutEnd,LockoutEnabled,AccessFailedCount")] User user)
         {
             if (id != user.Id)
@@ -117,6 +124,7 @@ namespace Arhitekt.Controllers
         }
 
         // GET: User/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -137,6 +145,7 @@ namespace Arhitekt.Controllers
         // POST: User/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var user = await _context.Users.FindAsync(id);

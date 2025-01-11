@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Arhitekt.Data;
 using Arhitekt.Models;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Arhitekt.Controllers
 {
@@ -21,12 +22,14 @@ namespace Arhitekt.Controllers
         }
 
         // GET: Project
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Projects.ToListAsync());
         }
 
         // GET: Project/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,6 +48,7 @@ namespace Arhitekt.Controllers
         }
 
         // GET: Project/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["UserintID"] = new SelectList(_context.Users, "UserintID", "UserintID");
@@ -56,6 +60,7 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,Image")] Project project, IFormFile file)
 {
     if (ModelState.IsValid)
@@ -103,6 +108,7 @@ namespace Arhitekt.Controllers
         }
 
         // GET: Project/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -123,6 +129,7 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("ProjectID,Name,Description,DateCreated,Image,UserintID")] Project project)
         {
             if (id != project.ProjectID)
@@ -154,6 +161,7 @@ namespace Arhitekt.Controllers
         }
 
         // GET: Project/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -174,6 +182,7 @@ namespace Arhitekt.Controllers
         // POST: Project/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var project = await _context.Projects.FindAsync(id);
