@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Arhitekt.Models;
 using Arhitekt.Data;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Arhitekt.Controllers
 {
@@ -14,6 +15,42 @@ namespace Arhitekt.Controllers
         {
             _context = context;
         }
+
+        public IActionResult SearchResults(string? query, string? searchType)
+    {
+        if (string.IsNullOrEmpty(query))
+        {
+            return View(new SearchResultsViewModel());
+        }
+
+        var users = new List<User>();
+        var projects = new List<Project>();
+
+        if (searchType == "All" || searchType == "Users")
+        {
+            users = _context.Users
+                .Where(u => EF.Functions.Like(u.FirstName, $"%{query}%")
+                    || EF.Functions.Like(u.LastName, $"%{query}%")
+                    || EF.Functions.Like(u.Email, $"%{query}%"))
+                .ToList();
+        }
+
+        if (searchType == "All" || searchType == "Projects")
+        {
+            projects = _context.Projects
+                .Where(p => EF.Functions.Like(p.Name, $"%{query}%")
+                    || EF.Functions.Like(p.Description, $"%{query}%"))
+                .ToList();
+        }
+
+        var model = new SearchResultsViewModel
+        {
+            Users = users,
+            Projects = projects
+        };
+
+        return View(model);
+    }
 
         public IActionResult Index()
         {
