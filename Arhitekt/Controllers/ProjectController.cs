@@ -47,10 +47,11 @@ namespace Arhitekt.Controllers
         }
 
         // GET: Project/Create
-        public IActionResult Create()
+        public IActionResult Create(IFormFile file)
         {
             ViewData["ArchitectID"] = new SelectList(_context.Architects, "ArchitectID", "ArchitectID");
             return View();
+
         }
 
         // POST: Project/Create
@@ -58,23 +59,9 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,images,ArchitectID")] Project project, IFormFile file)
+        public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,Image,ArchitectID")] Project project, IFormFile file)
         {
             if (ModelState.IsValid)
-            {
-                _context.Add(project);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-
-            UploadFile(file);
-
-
-            ViewData["ArchitectID"] = new SelectList(_context.Architects, "ArchitectID", "ArchitectID", project.ArchitectID);
-            return View(project);
-        }
-
-        public void UploadFile(IFormFile file)
             {
                 if (file != null)
                 {
@@ -82,10 +69,32 @@ namespace Arhitekt.Controllers
                     var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
-                        file.CopyTo(fileStream);
+                        await file.CopyToAsync(fileStream);
                     }
+                    project.Image = "/images/" + fileName;
+                }
+
+                _context.Add(project);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            ViewData["ArchitectID"] = new SelectList(_context.Architects, "ArchitectID", "ArchitectID", project.ArchitectID);
+            return View(project);
+        }
+
+        public void UploadFile(IFormFile file)
+        {
+            if (file != null)
+            {
+                var fileName = Path.GetFileName(file.FileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(fileStream);
                 }
             }
+        }
 
         // GET: Project/Edit/5
         public async Task<IActionResult> Edit(int? id)
