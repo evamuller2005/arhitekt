@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <h5 class="card-title">@project.Name</h5>
                             <p class="card-text">@project.Description</p>
-                            <a href="@Url.Action("Details", "Projects", new { id = project.ProjectID })" class="btn btn-outline-primary">View Project</a>
+                            <a href="@Url.Action("Details", "Project", new { id = project.ProjectID })" class="btn btn-outline-primary">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
         else
         {
             <div class="col-12">
-                <p class="text-center">You have no projects. <a href="@Url.Action("Create", "Projects")">Create one now!</a></p>
+                <p class="text-center">You have no projects. <a href="@Url.Action("Create", "Project")">Create one now!</a></p>
             </div>
         }
     </div>
