@@ -1,35 +1,29 @@
-@{
-    ViewData["Title"] = "My Projects";
-}
-<div class="container my-5">
-    <h1 class="text-center" style="color: #ECECEC;">@ViewData["Title"]</h1>
-    <p class="text-center lead" style="color: #B0B0B0;">Manage and explore your personal projects</p>
-</div>
+@model IEnumerable<Arhitekt.Models.Project>
 
-<p>Tukaj so moji projekti.</p>
 <div class="container">
     <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="/images/911.jpg" class="card-img-top" alt="Project 1">
-                <div class="card-body">
-                    <h5 class="card-title">Project Name 1</h5>
-                    <p class="card-text">A short description of the project.</p>
-                    <a href="/Projects/1" class="btn btn-outline-primary">View Project</a>
+        @if (Model.Any())
+        {
+            @foreach (var project in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="@project.Image" class="card-img-top" alt="@project.Name">
+                        <div class="card-body">
+                            <h5 class="card-title">@project.Name</h5>
+                            <p class="card-text">@project.Description</p>
+                            <a href="@Url.Action("Details", "Projects", new { id = project.ProjectID })" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
                 </div>
+            }
+        }
+        else
+        {
+            <div class="col-12">
+                <p class="text-center">You have no projects. <a href="@Url.Action("Create", "Projects")">Create one now!</a></p>
             </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="/images/proj2.jpg" class="card-img-top" alt="Project 2">
-                <div class="card-body">
-                    <h5 class="card-title">Project Name 2</h5>
-                    <p class="card-text">A short description of the project.</p>
-                    <a href="/Projects/2" class="btn btn-outline-primary">View Project</a>
-                </div>
-            </div>
-        </div>
+        }
     </div>
 </div>
 
@@ -45,10 +39,10 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
     .card-img-top {
-        height: 200px;
-        object-fit: cover;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        height: 200px;
+        object-fit: cover;
     }
     .btn-outline-primary {
         border-color: #6A936C;

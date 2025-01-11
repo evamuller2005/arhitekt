@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace Arhitekt.Controllers
 {
@@ -78,7 +79,26 @@ namespace Arhitekt.Controllers
         [Authorize]
         public IActionResult Projects()
         {
-            return View();
+            // Retrieve the current user's unique identifier
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userId))
+            {
+                return RedirectToAction("Register", "Account");
+            }
+
+            // Fetch the user from the database
+            var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
+            {
+                return RedirectToAction("Register", "Account");
+            }
+
+            // Retrieve projects that belong to the current user
+            var userProjects = _context.Projects
+                .Where(p => p.UserintID == user.UserintID)
+                .ToList();
+
+            return View(userProjects);
         }
 
         [Authorize]
