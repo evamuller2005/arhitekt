@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Arhitekt.Migrations
 {
     [DbContext(typeof(ArhitektContext))]
-    [Migration("20250109185123_migr")]
-    partial class migr
+    [Migration("20250111161056_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,27 +25,6 @@ namespace Arhitekt.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Arhitekt.Models.Architect", b =>
-                {
-                    b.Property<int>("ArchitectID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ArchitectID"));
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("UserintID")
-                        .HasColumnType("int");
-
-                    b.HasKey("ArchitectID");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Architect", (string)null);
-                });
-
             modelBuilder.Entity("Arhitekt.Models.Project", b =>
                 {
                     b.Property<int>("ProjectID")
@@ -53,9 +32,6 @@ namespace Arhitekt.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProjectID"));
-
-                    b.Property<int>("ArchitectID")
-                        .HasColumnType("int");
 
                     b.Property<DateTime?>("DateCreated")
                         .HasColumnType("datetime2");
@@ -69,9 +45,15 @@ namespace Arhitekt.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("UserintID")
+                        .HasColumnType("int");
+
                     b.HasKey("ProjectID");
 
-                    b.HasIndex("ArchitectID");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Project", (string)null);
                 });
@@ -127,9 +109,6 @@ namespace Arhitekt.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("Role")
-                        .HasColumnType("int");
-
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -141,7 +120,10 @@ namespace Arhitekt.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<int>("UserintID")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserintID"));
 
                     b.HasKey("Id");
 
@@ -293,24 +275,13 @@ namespace Arhitekt.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Arhitekt.Models.Architect", b =>
+            modelBuilder.Entity("Arhitekt.Models.Project", b =>
                 {
                     b.HasOne("Arhitekt.Models.User", "User")
-                        .WithMany()
+                        .WithMany("Projects")
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Arhitekt.Models.Project", b =>
-                {
-                    b.HasOne("Arhitekt.Models.Architect", "Architect")
-                        .WithMany("Projects")
-                        .HasForeignKey("ArchitectID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Architect");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -364,7 +335,7 @@ namespace Arhitekt.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Arhitekt.Models.Architect", b =>
+            modelBuilder.Entity("Arhitekt.Models.User", b =>
                 {
                     b.Navigation("Projects");
                 });

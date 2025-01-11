@@ -1373,3 +1373,7 @@
 /Users/evamuller/Desktop/a/arhitekt/Arhitekt/obj/Debug/net8.0/Arhitekt.pdb
 /Users/evamuller/Desktop/a/arhitekt/Arhitekt/obj/Debug/net8.0/Arhitekt.genruntimeconfig.cache
 /Users/evamuller/Desktop/a/arhitekt/Arhitekt/obj/Debug/net8.0/ref/Arhitekt.dll
+/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll

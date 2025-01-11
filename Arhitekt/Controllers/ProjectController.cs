@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Arhitekt.Data;
 using Arhitekt.Models;
-using Microsoft.Identity.Client;
+using System.Security.Claims;
 
 namespace Arhitekt.Controllers
 {
@@ -23,8 +23,7 @@ namespace Arhitekt.Controllers
         // GET: Project
         public async Task<IActionResult> Index()
         {
-            var arhitektContext = _context.Projects.Include(p => p.Architect);
-            return View(await arhitektContext.ToListAsync());
+            return View(await _context.Projects.ToListAsync());
         }
 
         // GET: Project/Details/5
@@ -36,7 +35,6 @@ namespace Arhitekt.Controllers
             }
 
             var project = await _context.Projects
-                .Include(p => p.Architect)
                 .FirstOrDefaultAsync(m => m.ProjectID == id);
             if (project == null)
             {
@@ -47,11 +45,10 @@ namespace Arhitekt.Controllers
         }
 
         // GET: Project/Create
-        public IActionResult Create(IFormFile file)
+        public IActionResult Create()
         {
-            ViewData["ArchitectID"] = new SelectList(_context.Architects, "ArchitectID", "ArchitectID");
+            ViewData["UserintID"] = new SelectList(_context.Users, "UserintID", "UserintID");
             return View();
-
         }
 
         // POST: Project/Create
@@ -59,29 +56,38 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,Image,ArchitectID")] Project project, IFormFile file)
+        public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,Image")] Project project, IFormFile file)
+{
+    if (ModelState.IsValid)
+    {
+        if (file != null)
         {
-            if (ModelState.IsValid)
+            var fileName = Path.GetFileName(file.FileName);
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
             {
-                if (file != null)
-                {
-                    var fileName = Path.GetFileName(file.FileName);
-                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await file.CopyToAsync(fileStream);
-                    }
-                    project.Image = "/images/" + fileName;
-                }
-
-                _context.Add(project);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                await file.CopyToAsync(fileStream);
             }
-
-            ViewData["ArchitectID"] = new SelectList(_context.Architects, "ArchitectID", "ArchitectID", project.ArchitectID);
-            return View(project);
+            project.Image = "/images/" + fileName;
         }
+        
+        // Get the current user and assign UserintID
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+        if (user != null)
+        {
+            project.UserintID = user.UserintID;
+        }
+
+        _context.Add(project);
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+    UploadFile(file);
+    ViewData["UserintID"] = new SelectList(_context.Users, "UserintID", "UserintID", project.UserintID);
+    return View(project);
+}
 
         public void UploadFile(IFormFile file)
         {
@@ -109,7 +115,6 @@ namespace Arhitekt.Controllers
             {
                 return NotFound();
             }
-            ViewData["ArchitectID"] = new SelectList(_context.Architects, "ArchitectID", "ArchitectID", project.ArchitectID);
             return View(project);
         }
 
@@ -118,7 +123,7 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProjectID,Name,Description,DateCreated,images,ArchitectID")] Project project)
+        public async Task<IActionResult> Edit(int id, [Bind("ProjectID,Name,Description,DateCreated,Image,UserintID")] Project project)
         {
             if (id != project.ProjectID)
             {
@@ -145,7 +150,6 @@ namespace Arhitekt.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ArchitectID"] = new SelectList(_context.Architects, "ArchitectID", "ArchitectID", project.ArchitectID);
             return View(project);
         }
 
@@ -158,7 +162,6 @@ namespace Arhitekt.Controllers
             }
 
             var project = await _context.Projects
-                .Include(p => p.Architect)
                 .FirstOrDefaultAsync(m => m.ProjectID == id);
             if (project == null)
             {

@@ -41,14 +41,15 @@ namespace Arhitekt.Controllers
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return Redirect("~/Identity/Account/Register");
+        }
+
         public IActionResult Discover()
         {
-            // Fetch all users with the Architect role
-            var architects = _context.Users
-                .Where(u => u.Role == UserRole.Architect)
-                .ToList();
-
-            return View(architects);
+            var users = _context.Users.ToList();
+            return View(users);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
