@@ -5,6 +5,11 @@ using Arhitekt.Data;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.AspNetCore.Authorization;
+using System.Linq;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
 namespace Arhitekt.Controllers
 {
     public class HomeController : Controller
@@ -16,6 +21,7 @@ namespace Arhitekt.Controllers
             _context = context;
         }
 
+        [Authorize]
         public IActionResult SearchResults(string? query, string? searchType)
     {
         if (string.IsNullOrEmpty(query))
@@ -63,16 +69,19 @@ namespace Arhitekt.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Messages()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Projects()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Search()
         {
             return View();
@@ -83,6 +92,7 @@ namespace Arhitekt.Controllers
             return Redirect("~/Identity/Account/Register");
         }
 
+        [Authorize]
         public IActionResult Discover()
         {
             var users = _context.Users.ToList();
