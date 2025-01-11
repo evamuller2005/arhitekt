@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Arhitekt.Migrations
 {
     [DbContext(typeof(ArhitektContext))]
-    [Migration("20250111173008_initial2")]
-    partial class initial2
+    [Migration("20250111193547_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
