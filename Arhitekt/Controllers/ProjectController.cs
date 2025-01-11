@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Arhitekt.Data;
 using Arhitekt.Models;
+using Microsoft.Identity.Client;
 
 namespace Arhitekt.Controllers
 {
@@ -57,7 +58,7 @@ namespace Arhitekt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,images,ArchitectID")] Project project)
+        public async Task<IActionResult> Create([Bind("ProjectID,Name,Description,DateCreated,images,ArchitectID")] Project project, IFormFile file)
         {
             if (ModelState.IsValid)
             {
@@ -65,9 +66,26 @@ namespace Arhitekt.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            UploadFile(file);
+
+
             ViewData["ArchitectID"] = new SelectList(_context.Architects, "ArchitectID", "ArchitectID", project.ArchitectID);
             return View(project);
         }
+
+        public void UploadFile(IFormFile file)
+            {
+                if (file != null)
+                {
+                    var fileName = Path.GetFileName(file.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                }
+            }
 
         // GET: Project/Edit/5
         public async Task<IActionResult> Edit(int? id)
