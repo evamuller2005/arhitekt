@@ -3,6 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using Arhitekt.Models;
 using Arhitekt.Data;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+
+using Microsoft.AspNetCore.Authorization;
+using System.Linq;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace Arhitekt.Controllers
 {
@@ -15,6 +22,43 @@ namespace Arhitekt.Controllers
             _context = context;
         }
 
+        [Authorize]
+        public IActionResult SearchResults(string? query, string? searchType)
+    {
+        if (string.IsNullOrEmpty(query))
+        {
+            return View(new SearchResultsViewModel());
+        }
+
+        var users = new List<User>();
+        var projects = new List<Project>();
+
+        if (searchType == "All" || searchType == "Users")
+        {
+            users = _context.Users
+                .Where(u => EF.Functions.Like(u.FirstName, $"%{query}%")
+                    || EF.Functions.Like(u.LastName, $"%{query}%")
+                    || EF.Functions.Like(u.Email, $"%{query}%"))
+                .ToList();
+        }
+
+        if (searchType == "All" || searchType == "Projects")
+        {
+            projects = _context.Projects
+                .Where(p => EF.Functions.Like(p.Name, $"%{query}%")
+                    || EF.Functions.Like(p.Description, $"%{query}%"))
+                .ToList();
+        }
+
+        var model = new SearchResultsViewModel
+        {
+            Users = users,
+            Projects = projects
+        };
+
+        return View(model);
+    }
+
         public IActionResult Index()
         {
             // Fetch all projects from the database
@@ -26,29 +70,53 @@ namespace Arhitekt.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Messages()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Projects()
         {
-            return View();
+            // Retrieve the current user's unique identifier
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userId))
+            {
+                return RedirectToAction("Register", "Account");
+            }
+
+            // Fetch the user from the database
+            var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
+            {
+                return RedirectToAction("Register", "Account");
+            }
+
+            // Retrieve projects that belong to the current user
+            var userProjects = _context.Projects
+                .Where(p => p.UserintID == user.UserintID)
+                .ToList();
+
+            return View(userProjects);
         }
 
+        [Authorize]
         public IActionResult Search()
         {
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return Redirect("~/Identity/Account/Register");
+        }
+
+        [Authorize]
         public IActionResult Discover()
         {
-            // Fetch all users with the Architect role
-            var architects = _context.Users
-                .Where(u => u.Role == UserRole.Architect)
-                .ToList();
-
-            return View(architects);
+            var users = _context.Users.ToList();
+            return View(users);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

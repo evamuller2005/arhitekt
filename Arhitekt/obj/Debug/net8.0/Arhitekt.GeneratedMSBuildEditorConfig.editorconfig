@@ -186,26 +186,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Arhitekt/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJoaXRla3QvQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Arhitekt/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJoaXRla3QvRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Arhitekt/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJoaXRla3QvRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Arhitekt/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJoaXRla3QvRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Arhitekt/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJoaXRla3QvSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Home/Discover.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EaXNjb3Zlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -224,6 +204,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Home/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Home/SearchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZWFyY2hSZXN1bHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/gregorvidrih/Documents/arhitekt/arhitekt-1/Arhitekt/Views/Project/Create.cshtml]

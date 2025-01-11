@@ -11,10 +11,18 @@
 
 <div class="container mb-5">
     <form class="form-inline d-flex justify-content-center" method="get" action="/Home/SearchResults">
+        <!-- Add a dropdown (or any input) to choose which entities to search -->
+        <select name="searchType" class="form-control w-auto mr-2">
+            <option value="All">All</option>
+            <option value="Users">Users</option>
+            <option value="Projects">Projects</option>
+        </select>
         <input class="form-control w-50 mr-2" type="search" placeholder="Search architects" aria-label="Search" name="query">
         <button class="btn btn-outline-primary" type="submit">Search</button>
     </form>
 </div>
+
+
 
 <style>
     body {

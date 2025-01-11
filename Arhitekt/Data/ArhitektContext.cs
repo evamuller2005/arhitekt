@@ -14,14 +14,15 @@ public ArhitektContext(DbContextOptions<ArhitektContext> options) : base(options
 }
 
 public DbSet<User> Users { get; set; }
-public DbSet<Architect> Architects { get; set; }
 public DbSet<Project> Projects { get; set; }
 
 protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
             base.OnModelCreating(modelBuilder);
     modelBuilder.Entity<User>().ToTable("User");
-    modelBuilder.Entity<Architect>().ToTable("Architect");
+    modelBuilder.Entity<User>()
+            .Property(u => u.UserintID)
+            .ValueGeneratedOnAdd();
     modelBuilder.Entity<Project>().ToTable("Project");
 }
 

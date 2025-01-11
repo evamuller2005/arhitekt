@@ -9,6 +9,6 @@ public class Project
     public string? Description { get; set; }
     public DateTime? DateCreated { get; set; }
     public string? Image { get; set; }
-    public int ArchitectID { get; set; } // Foreign key
-    public Architect? Architect { get; set; }
+    public int UserintID { get; set; } // Foreign key
+    public User? User { get; set; }
 }

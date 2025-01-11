@@ -5,16 +5,16 @@
 }
 
 <div class="container mt-5">
-    <h1 class="text-center mb-4">Discover Architects</h1>
+    <h1 class="text-center mb-4">Discover Users</h1>
 
     <div class="row">
-        @foreach (var architect in Model)
+        @foreach (var user in Model)
         {
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">@architect.FirstName @architect.LastName</h5>
-                        <p class="card-text">Email: @architect.Email</p>
+                        <h5 class="card-title">@user.FirstName @user.LastName</h5>
+                        <p class="card-text">Email: @user.Email</p>
                     </div>
                 </div>
             </div>
