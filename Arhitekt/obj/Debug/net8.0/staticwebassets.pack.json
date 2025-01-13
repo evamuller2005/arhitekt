@@ -1,407 +1,411 @@
 {
   "Files": [
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/obj/Debug/net8.0/scopedcss/projectbundle/Arhitekt.bundle.scp.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/obj/Debug/net8.0/scopedcss/projectbundle/Arhitekt.bundle.scp.css",
       "PackagePath": "staticwebassets/Arhitekt.bundle.scp.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/css/site.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/favicon.ico",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/911.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/4-up on 28-11-2022 at 16.05 (compiled).jpg",
+      "PackagePath": "staticwebassets/images/4-up on 28-11-2022 at 16.05 (compiled).jpg"
+    },
+    {
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/911.jpg",
       "PackagePath": "staticwebassets/images/911.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/antwerp.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/antwerp.jpg",
       "PackagePath": "staticwebassets/images/antwerp.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/back.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/back.jpg",
       "PackagePath": "staticwebassets/images/back.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/bigwood.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/bigwood.jpg",
       "PackagePath": "staticwebassets/images/bigwood.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/carmel.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/carmel.jpg",
       "PackagePath": "staticwebassets/images/carmel.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/casan.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/casan.jpg",
       "PackagePath": "staticwebassets/images/casan.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/chameleon.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/chameleon.jpg",
       "PackagePath": "staticwebassets/images/chameleon.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/chau.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/chau.jpg",
       "PackagePath": "staticwebassets/images/chau.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/collage.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/collage.jpg",
       "PackagePath": "staticwebassets/images/collage.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/courtyard.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/courtyard.jpg",
       "PackagePath": "staticwebassets/images/courtyard.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/crystal.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/crystal.jpg",
       "PackagePath": "staticwebassets/images/crystal.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/diya.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/diya.jpg",
       "PackagePath": "staticwebassets/images/diya.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/escobar.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/escobar.jpg",
       "PackagePath": "staticwebassets/images/escobar.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/four.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/four.jpg",
       "PackagePath": "staticwebassets/images/four.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/gabion.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/gabion.jpg",
       "PackagePath": "staticwebassets/images/gabion.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/garden.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/garden.jpg",
       "PackagePath": "staticwebassets/images/garden.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/h3.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/h3.jpg",
       "PackagePath": "staticwebassets/images/h3.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/hikari.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/hikari.jpg",
       "PackagePath": "staticwebassets/images/hikari.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/hopper.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/hopper.jpg",
       "PackagePath": "staticwebassets/images/hopper.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/koda.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/koda.jpg",
       "PackagePath": "staticwebassets/images/koda.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/meztitla.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/meztitla.jpg",
       "PackagePath": "staticwebassets/images/meztitla.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/naked.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/naked.jpg",
       "PackagePath": "staticwebassets/images/naked.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/napoli.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/napoli.jpg",
       "PackagePath": "staticwebassets/images/napoli.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/ownerless.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/ownerless.jpg",
       "PackagePath": "staticwebassets/images/ownerless.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/peter.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/peter.jpg",
       "PackagePath": "staticwebassets/images/peter.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/piano.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/piano.jpg",
       "PackagePath": "staticwebassets/images/piano.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/quest.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/quest.jpg",
       "PackagePath": "staticwebassets/images/quest.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/rural.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/rural.jpg",
       "PackagePath": "staticwebassets/images/rural.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/secret.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/secret.jpg",
       "PackagePath": "staticwebassets/images/secret.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/ss3.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/ss3.jpg",
       "PackagePath": "staticwebassets/images/ss3.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/taller.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/taller.jpg",
       "PackagePath": "staticwebassets/images/taller.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/thong.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/thong.jpg",
       "PackagePath": "staticwebassets/images/thong.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/tianjin.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/tianjin.jpg",
       "PackagePath": "staticwebassets/images/tianjin.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/tiny.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/tiny.jpg",
       "PackagePath": "staticwebassets/images/tiny.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/under.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/under.jpg",
       "PackagePath": "staticwebassets/images/under.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/valley.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/valley.jpg",
       "PackagePath": "staticwebassets/images/valley.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/west.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/west.jpg",
       "PackagePath": "staticwebassets/images/west.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/wild.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/wild.jpg",
       "PackagePath": "staticwebassets/images/wild.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/xin.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/xin.jpg",
       "PackagePath": "staticwebassets/images/xin.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/images/zen.jpg",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/images/zen.jpg",
       "PackagePath": "staticwebassets/images/zen.jpg"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/js/site.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/gregorvidrih/Documents/koncn arhitekt/arhitekt/Arhitekt/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/Users/evamuller/Desktop/arhitekt/Arhitekt/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
