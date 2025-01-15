@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Arhitekt.Data;
 using Arhitekt.Models;
+using Filters;
 
 namespace Arhitekt.Controllers.Api
 {
     [Route("api/[controller]")]
     [ApiController]
+    [ApiKeyAuth]
     public class UsersApiController : ControllerBase
     {
         private readonly ArhitektContext _context;
@@ -23,6 +25,7 @@ namespace Arhitekt.Controllers.Api
 
         // GET: api/UsersApi
         [HttpGet]
+        [ApiKeyAuth]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
@@ -30,6 +33,7 @@ namespace Arhitekt.Controllers.Api
 
         // GET: api/UsersApi/5
         [HttpGet("{id}")]
+        [ApiKeyAuth]
         public async Task<ActionResult<User>> GetUser(string id)
         {
             var user = await _context.Users.FindAsync(id);
@@ -45,6 +49,7 @@ namespace Arhitekt.Controllers.Api
         // PUT: api/UsersApi/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [ApiKeyAuth]
         public async Task<IActionResult> PutUser(string id, User user)
         {
             if (id != user.Id)
@@ -76,6 +81,7 @@ namespace Arhitekt.Controllers.Api
         // POST: api/UsersApi
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [ApiKeyAuth]
         public async Task<ActionResult<User>> PostUser(User user)
         {
             _context.Users.Add(user);
@@ -100,6 +106,7 @@ namespace Arhitekt.Controllers.Api
 
         // DELETE: api/UsersApi/5
         [HttpDelete("{id}")]
+        [ApiKeyAuth]
         public async Task<IActionResult> DeleteUser(string id)
         {
             var user = await _context.Users.FindAsync(id);

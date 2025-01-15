@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Arhitekt.Data;
 using Arhitekt.Models;
+using Filters;
 
 namespace Arhitekt.Controllers.Api
 {
     [Route("api/[controller]")]
     [ApiController]
+    [ApiKeyAuth]
     public class ProjectsApiController : ControllerBase
     {
         private readonly ArhitektContext _context;
@@ -23,6 +25,7 @@ namespace Arhitekt.Controllers.Api
 
         // GET: api/ProjectsApi
         [HttpGet]
+        [ApiKeyAuth]
         public async Task<ActionResult<IEnumerable<Project>>> GetProjects()
         {
             return await _context.Projects.ToListAsync();
@@ -30,6 +33,7 @@ namespace Arhitekt.Controllers.Api
 
         // GET: api/ProjectsApi/5
         [HttpGet("{id}")]
+        [ApiKeyAuth]
         public async Task<ActionResult<Project>> GetProject(int id)
         {
             var project = await _context.Projects.FindAsync(id);
@@ -45,6 +49,7 @@ namespace Arhitekt.Controllers.Api
         // PUT: api/ProjectsApi/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [ApiKeyAuth]
         public async Task<IActionResult> PutProject(int id, Project project)
         {
             if (id != project.ProjectID)
@@ -76,6 +81,7 @@ namespace Arhitekt.Controllers.Api
         // POST: api/ProjectsApi
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [ApiKeyAuth]
         public async Task<ActionResult<Project>> PostProject(Project project)
         {
             _context.Projects.Add(project);
@@ -86,6 +92,7 @@ namespace Arhitekt.Controllers.Api
 
         // DELETE: api/ProjectsApi/5
         [HttpDelete("{id}")]
+        [ApiKeyAuth]
         public async Task<IActionResult> DeleteProject(int id)
         {
             var project = await _context.Projects.FindAsync(id);
