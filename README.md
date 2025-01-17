@@ -58,5 +58,6 @@ Eva Müller:
 
 # Podatkovni model
 
+![Diagram](https://github.com/user-attachments/assets/e316c31a-a103-4e33-acbb-8f21c6011a72)
 
 
