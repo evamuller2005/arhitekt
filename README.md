@@ -42,6 +42,7 @@ Platforma omogoča arhitektom, da se povežejo, delijo projekte in sodelujejo pr
 ![66827](https://github.com/user-attachments/assets/ef062411-a021-4140-af1d-741e1c769776)
 
 
+
 # Izvedba Nalog
 
 Gregor Vidrih:
@@ -49,6 +50,7 @@ Gregor Vidrih:
 - Nastavitev podatkovne baze in implementacija avtentikacije uporabnikov.
 - Razvoj Android aplikacije in implementacija funkcionalnosti za iskanje projektov.
 - Razvoj sistema za dodajanje in prikazovanje projektov.
+- Razvoj API
 
 Eva Müller:
 
@@ -59,4 +61,5 @@ Eva Müller:
 # Podatkovni model
 
 
+![Posnetek zaslona 2025-01-17 203656](https://github.com/user-attachments/assets/2c167867-b221-488e-89fb-30eb898cd8a5)
 
